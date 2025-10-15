@@ -1,0 +1,52 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+    <table border="1" width="1000" height="600">
+        <!-- Header Row -->
+        <tr>
+            <th bgcolor="orange" width="200">Logo</th>
+            <th colspan="5" bgcolor="orange">WebSite Name</th>
+        </tr>
+
+        <!-- Navigation Row -->
+        <tr bgcolor="#f5d7bd" style="text-align:center;">
+            <td>Home</td>
+            <td>Login</td>
+            <td>Registration</td>
+            <td>Catalogue</td>
+            <td>Cart</td>
+        </tr>
+
+        <!-- Main Content -->
+        <tr>
+            <!-- Left side menu -->
+            <td rowspan="4" style="text-align:left; padding-left:20px;">
+                CSE <br><br>
+                ECE <br><br>
+                EEE <br><br>
+                CIVIL
+            </td>
+
+            <!-- Right side login form -->
+            <td colspan="4" rowspan="4" style="text-align:center;">
+                <h3>Login Page</h3>
+                <form>
+                    <label>User Name:</label>
+                    <input type="text" name="username"><br><br>
+
+                    <label>Passwords:</label>
+                    <input type="password" name="password"><br><br>
+
+                    <input type="submit" value="Submit" style="color:red;">
+                    <input type="reset" value="Reset" style="color:red;">
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
