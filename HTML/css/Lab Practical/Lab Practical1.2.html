@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Card</title>
+    <style>
+        body {
+            background-image: url('spc.jpg'); /* replace with your image */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 40%;          /* narrower */
+            height: 550px;       /* longer */
+            margin: 30px auto;
+            background-color: rgba(255, 182, 193, 0.9); /* light pink */
+            border-radius: 20px; /* rounded corners */
+            transition: all 0.6s ease-in-out;
+            overflow: hidden;
+        }
+
+        table:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 12px;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            transition: transform 0.5s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+            transition: color 0.8s ease; /* slow color transition */
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        td b {
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <h2><b>Profile Card</b></h2>
+    <table cellpadding="8" cellspacing="0" align="center">
+        <tr>
+            <td colspan="2" align="center">
+                <img src="ph.jpg" alt="Profile Picture">
+            </td>
+        </tr>
+        <tr>
+            <td><b>Name</b></td>
+            <td>Harshit Pandey</td>
+        </tr>
+        <tr>
+            <td><b>Role</b></td>
+            <td>Student (Computer Science)</td>
+        </tr>
+        <tr>
+            <td><b>Email</b></td>
+            <td><a href="mailto:pharshit845@gmail.com">pharshit845@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td><b>Phone</b></td>
+            <td>‪+91-8931‬</td>
+        </tr>
+        <tr>
+            <td><b>About</b></td>
+            <td>Enthusiastic student, passionate about coding and learning.</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <a href="#">GitHub</a> | <a href="#">LinkedIn</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
