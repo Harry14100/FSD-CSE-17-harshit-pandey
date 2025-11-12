@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            background-color: #fff;
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            box-sizing: border-box;
+        }
+        .radio-group, .checkbox-group {
+            margin-top: 4px;
+        }
+        .radio-group input, .checkbox-group input {
+            width: auto;
+        }
+        textarea {
+            resize: none;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="email">E-mail ID:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label>Sex:</label>
+        <div class="radio-group">
+            <input type="radio" id="male" name="sex" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="Female">
+            <label for="female">Female</label>
+        </div>
+
+        <label>Date of Birth:</label>
+        <div>
+            <select name="day">
+                <option value="">Day</option>
+                <!-- You can add 1 to 31 dynamically later -->
+                <script>
+                    for(let i=1; i<=31; i++){
+                        document.write(`<option value="${i}">${i}</option>`);
+                    }
+                </script>
+            </select>
+
+            <select name="month">
+                <option value="">Month</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+
+            <select name="year">
+                <option value="">Year</option>
+                <script>
+                    for(let y=1970; y<=2025; y++){
+                        document.write(`<option value="${y}">${y}</option>`);
+                    }
+                </script>
+            </select>
+        </div>
+
+        <label>Languages Known:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="english" name="language" value="English">
+            <label for="english">English</label>
+            <input type="checkbox" id="telugu" name="language" value="Telugu">
+            <label for="telugu">Telugu</label>
+            <input type="checkbox" id="hindi" name="language" value="Hindi">
+            <label for="hindi">Hindi</label>
+            <input type="checkbox" id="tamil" name="language" value="Tamil">
+            <label for="tamil">Tamil</label>
+        </div>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="30"></textarea>
+
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
